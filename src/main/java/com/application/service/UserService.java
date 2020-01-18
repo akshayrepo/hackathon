@@ -1,18 +1,17 @@
 package com.application.service;
 
+import com.application.exception.RecordNotFoundException;
+import com.application.model.EmployeeEntity;
+import com.application.repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.application.exception.RecordNotFoundException;
-import com.application.model.EmployeeEntity;
-import com.application.repository.EmployeeRepository;
-
 @Service
-public class EmployeeService {
+public class UserService {
 	
 	@Autowired
 	EmployeeRepository repository;

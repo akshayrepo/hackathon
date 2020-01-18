@@ -1,8 +1,5 @@
 package com.application.web;
 
-import java.util.List;
-import java.util.Optional;
-
 import com.application.exception.RecordNotFoundException;
 import com.application.model.EmployeeEntity;
 import com.application.service.EmployeeService;
@@ -13,10 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.List;
+import java.util.Optional;
+
 
 @Controller
 @RequestMapping("/")
-public class EmployeeMvcController 
+public class UserController
 {
 	@Autowired
 	EmployeeService service;
