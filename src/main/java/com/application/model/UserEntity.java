@@ -6,6 +6,10 @@ import javax.persistence.*;
 @Table(name="TBL_EMPLOYEES")
 public class UserEntity {
 
+	public function kay_re(){
+		print("Hao");
+	}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
