@@ -3,22 +3,22 @@ package com.application.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="TBL_EMPLOYEES")
+@Table(name="TBL_USERS")
 public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     @Column(name="first_name")
     private String firstName;
-    
+
     @Column(name="last_name")
     private String lastName;
-    
+
     @Column(name="email", nullable=false, length=200)
     private String email;
-    
+
     public Long getId() {
 		return id;
 	}
@@ -51,9 +51,13 @@ public class UserEntity {
 		this.email = email;
 	}
 
+  public void getFullName() {
+    return (this.firstName + " " + this.lastName);
+  }
+
     @Override
     public String toString() {
-        return "EmployeeEntity [id=" + id + ", firstName=" + firstName + 
+        return "EmployeeEntity [id=" + id + ", firstName=" + firstName +
                 ", lastName=" + lastName + ", email=" + email   + "]";
     }
 }
