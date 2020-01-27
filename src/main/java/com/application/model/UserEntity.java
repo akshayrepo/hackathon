@@ -3,7 +3,7 @@ package com.application.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="TBL_EMPLOYEES")
+@Table(name="TBL_STUDENTS")
 public class UserEntity {
 
 	public function kay_re(){
